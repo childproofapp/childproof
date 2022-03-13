@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;1,300&display=swap');
+
+header {
+    display: block;
+    width: 100%;
+    height: 100px;
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.98);
+    z-index: 1;
+}
+
+body header #content {
+    max-width: 1000px;
+    height: auto;
+    position: relative;
+    padding: 0;
+}
+
+header #logo {
+    display: block;
+    height: 50px;
+    top: 23px;
+    left: 50px;
+    width: auto;
+    position: absolute;
+}
+
+header nav {
+    position: absolute;
+    right: 0px;
+    top: 13px;
+}
+
+header nav ul {
+    list-style-type: none;
+}
+
+header nav ul li {
+    display: inline-block;
+    padding-right: 50px;
+    font-weight: 500;
+    height: 40px;
+    font-size: 18px;
+    line-height: 40px;
+    cursor: pointer;
+}
+
+header nav ul li:hover {
+    text-decoration: underline;
+}
+
+body {
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+body #section-1 {
+    display: block;
+    min-height: 50px;
+    width: 100%;
+    color: white;
+}
+
+body #section-1 p {
+    font-size: 19px;
+    margin-bottom: 80px !important;
+    font-family: 'Lato', sans-serif;
+}
+
+
+body #section-1 h3 {
+    font-size: 45px;
+    font-family: 'Lato', sans-serif;
+}
+
+.grow { transition: all .2s ease-in-out; }
+.grow:hover { transform: scale(1.1); }
+
+
+body #section-1 .typewriter {
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+        typing 4s steps(40, end)
+}
+
+body #section-1 #download-wrapper {
+    text-align: center;
+    margin-top: 40px;
+}
+
+body #section-1 #download-wrapper img {
+    border: 1px solid black;
+    width: 280px;
+}
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+.animated {
+-webkit-animation-duration: 3s;
+animation-duration: 3s;
+-webkit-animation-fill-mode: both;
+animation-fill-mode: both;
+}
+
+@-webkit-keyframes fadeIn {
+0% {opacity: 0;}
+100% {opacity: 1;}
+}
+
+@keyframes fadeIn {
+0% {opacity: 0;}
+100% {opacity: 1;}
+}
+
+.fadeIn {
+-webkit-animation-name: fadeIn;
+animation-name: fadeIn;
+}
+
+body #section-2 {
+    display: block;
+    min-height: 50px;
+    width: 100%;
+    height: 360px;
+}
+
+body #section-2 #column-one img {
+    height: 150px;
+    margin-top: 55px;
+}
+
+body #section-2 #column-two p {
+    text-align: left;
+    font-size: 18px;
+}
+
+body #section-3 {
+    display: block;
+    min-height: 50px;
+    width: 100%;
+    height: 500px;
+    color: white;
+}
+
+body #section-3 #content {
+    padding-top: 105px;
+}
+
+body #section-3 #content h3 {
+    font-size: 30px;
+}
+
+body #section-3 #content p {
+    text-align: right;
+    font-size: 18px;
+}
+
+body #section-3 #logo {
+    height: 105px;
+    margin-top: 50px;
+}
+
+body #section-3 #two-column {
+    margin-top: 50px;
+}
+
+body .sub-column {
+    display: inline-block;
+    width: 33%;
+}
+
+body .sub-column span {
+    display: inline-block;
+    text-align: center;
+    padding: 0px 28px;
+}
+
+body .sub-column h2 {
+    text-align: center;
+}
+
+body .sub-column .img-wrapper {
+    text-align: center;
+}
+
+body .sub-column .img-wrapper img {
+    width: 100px;
+}
+
+body #content {
+    max-width: 1000px;
+    margin: auto;
+    padding: 40px 0;
+}
+
+body #content h3 {
+    text-align: center;
+    margin-top: 0px;
+}
+
+body #content p {
+    margin: 0 50px;
+    text-align: center;
+}
+
+body #content #two-column {
+    display: flex;
+}
+
+body #content #column-one {
+    flex: 50%;
+    text-align: center;
+}
+
+body #content #column-two {
+    flex: 50%;
+    text-align: center;
+}
+
+footer {
+    display: flex;
+}
+
+footer #footer-wrapper {
+    width: 80%;
+    margin: auto;
+}
+
+footer #footer-wrapper div {
+    width: 32%;
+    text-align: center;
+    min-height: 100px;
+    padding: 40px 0;
+    float: left;
+    display: block;
+}
+
+footer #footer-wrapper div a {
+    line-height: 100px;
+}
+
+
+.parallax-1 {
+    background-image: url("/images/background_1.jpg");
+  
+    min-height: 500px; 
+  
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax-2 {
+    background-image: url("/images/background_2.jpg");
+  
+    min-height: 500px; 
+  
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
