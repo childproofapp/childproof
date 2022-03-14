@@ -27,7 +27,7 @@ const askForPermissionToReceiveNotifications = async () => {
     await messaging.requestPermission();
     const token = await messaging.getToken();
     console.log('Your token is:', token);
-    
+    saveToken(token)
     return token;
   } catch (error) {
     console.error(error);
@@ -35,6 +35,26 @@ const askForPermissionToReceiveNotifications = async () => {
 }
 
 askForPermissionToReceiveNotifications()
+
+function saveToken(token) {
+  new Promise(resolve => {
+    let token_payload = JSON.stringify(token)
+    chrome.storage.local.get(function(data){
+      login_mail = data.user_info.email
+      login_pass = data.user_info.pass
+    })
+    fetch('https://childproof-extension.herokuapp.com/token', { //https://childproof-extension.herokuapp.com/logout
+        method: 'POST',
+        headers: {
+            'Authorization': 'Basic ' + btoa(`${login_mail}:${login_pass}`),
+            'body': token_payload
+        }
+    })
+        .then(res => {console.log("Push token saved to database")},resolve("success"))
+        
+        .catch(err => console.log(err),resolve("fail"));
+  })
+}
 
 
 messaging.onMessage(payload => {
