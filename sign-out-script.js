@@ -38,7 +38,6 @@ askForPermissionToReceiveNotifications()
 
 function saveToken(token) {
   new Promise(resolve => {
-    let token_payload = JSON.stringify(token)
     chrome.storage.local.get(function(data){
       login_mail = data.user_info.email
       login_pass = data.user_info.pass
@@ -47,7 +46,7 @@ function saveToken(token) {
         method: 'POST',
         headers: {
             'Authorization': 'Basic ' + btoa(`${login_mail}:${login_pass}`),
-            'body': token_payload
+            'body': token
         }
     })
         .then(res => {console.log("Push token saved to database")},resolve("success"))
