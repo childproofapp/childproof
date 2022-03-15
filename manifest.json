@@ -5,7 +5,7 @@
   "theme_color": "#4a90e2",
   "background_color": "#4a90e2",
   "display": "fullscreen",
-  "scope": "/childproof",
+  "scope": "/childproof/",
   "start_url": ".",
   "icons": [
     {
