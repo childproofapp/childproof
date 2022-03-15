@@ -6,7 +6,7 @@
   "background_color": "#4a90e2",
   "display": "fullscreen",
   "scope": "/childproof/",
-  "start_url": ".",
+  "start_url": "./sign-in.html",
   "icons": [
     {
       "src": "assets/icon-192x192.png",
