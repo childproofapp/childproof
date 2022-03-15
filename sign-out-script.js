@@ -155,7 +155,7 @@ function flip_user_status(signIn, user_info) {
                   if (res.status !== 200) resolve('fail')
 
                   chrome.storage.local.set({ userStatus: signIn, user_info }, function (response) {
-                      if (chrome.runtime.lastError) resolve('fail');
+                      if (res.status !== 200) resolve('fail');
 
                       user_signed_in = signIn;
 
@@ -171,7 +171,7 @@ function flip_user_status(signIn, user_info) {
         localStorage.setItem("ODHLASENI", "ODHLASENO")
           chrome.storage.local.get(['userStatus', 'user_info'], function (response) {
               console.log(response);
-              if (chrome.runtime.lastError) resolve('fail');
+              if (res.status !== 200) resolve('fail');
 
               if (response.userStatus === undefined) resolve('fail');
 
@@ -186,7 +186,7 @@ function flip_user_status(signIn, user_info) {
                       if (res.status !== 200) resolve('fail');
 
                       chrome.storage.local.set({ userStatus: signIn, user_info: {} }, function (response) {
-                          if (chrome.runtime.lastError) resolve('fail');
+                          if (res.status !== 200) resolve('fail');
 
                           user_signed_in = signIn;
                           resolve('success');
