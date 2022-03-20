@@ -218,6 +218,52 @@
             color: grey;
         }
 
+        @media only screen and (max-width: 768px) {
+
+            html {
+                height: 100%;
+            }
+
+            body {
+                height: 100%;
+            }
+            
+            #wrapper {
+                width: 100%;
+                background: rgb(255, 255, 255);
+                height: auto;
+                position: relative;
+                top: 20%;
+                width: 90%;
+                border-radius: 25px;
+            }
+
+            #particles-js {
+                height: 100%;
+            }
+
+            #email::placeholder,#password::placeholder {
+                color: black;
+                font-size: 18px;
+                text-align: center;
+            }
+
+            #email, #password {
+                width: 100%;
+                width: -webkit-calc(100% - 40px);
+                width:    -moz-calc(100% - 40px);
+                width:         calc(100% - 40px);
+            }
+
+            #login-form {
+                flex-wrap: nowrap;
+            }
+
+            #login {
+                color: black;
+            }
+        }
+
     </style>
 </head>
 
@@ -229,12 +275,13 @@
 
             <form id="login-form">
                 <!--<H2 class="login-header">Control in your hands.</H2>-->
-                <p id="login-fail" style="width: 100%; text-align: center; display: none; font-size: 25px;"> Login failed </p>
+                
                 <label>User e-mail</label>
-                <input type="email" name="email" id="email" autocomplete="off" placeholder="Please enter your e-mail">
+                <input type="email" name="email" id="email" autocomplete="off" placeholder="Please enter e-mail">
                 <label>Password</label>
-                <input type="password" name="password" id="password" placeholder="Please enter your password">
+                <input type="password" name="password" id="password" placeholder="Please enter password">
                 <button type="submit" id="login">Sign In</button>
+                <p id="login-fail" style="width: 100%; text-align: center; display: none; font-size: 25px;"> Login failed </p>
                 
             </form>
         </div>
