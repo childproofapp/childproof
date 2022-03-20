@@ -268,3 +268,104 @@ footer #footer-wrapper div a {
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+@media only screen and (min-width: 768px) {
+    header {
+        height: 250px;
+    }
+
+    header nav ul li {
+        font-size: 60px;
+    }
+
+    header nav ul li a {
+        text-decoration: none;
+        color: black;
+    }
+
+    header nav {
+        top: 60px;
+        right: 50px;
+    }
+
+    header #logo {
+        height: 150px;
+        top: 45px;
+        left: 90px;
+    }
+
+    body #content {
+        font-size: 45px;
+    }
+
+    body #section-1 p {
+        font-size: 30px;
+    }
+
+    body .sub-column {
+        width: 100%;
+        margin-bottom: 45px;
+    }
+
+    body #section-1 #download-wrapper img {
+        width: 95%;
+    }
+
+    body #section-2 #column-one img {
+        height: 270px;
+    }
+
+    body #section-2 {
+        height: auto;
+        font-size: 60px;
+    }
+
+    body #section-2 #content{
+        padding: 80px 0px;
+    }
+
+    body #section-2 #column-two p {
+        font-size: 40px;
+    }
+
+    body #content #two-column {
+        flex-direction: column-reverse;
+    }
+
+    body #content #two-column p {
+        text-align: center;
+    }
+
+    body #section-3 #content h3 {
+        font-size: 80px;
+    }
+
+    body #section-3 {
+        height: auto;
+    }
+
+    body #section-3 #logo {
+        height: 160px;
+    }
+
+    body #section-3 #column-one {
+        margin-top: 60px;
+        color: white;
+    }
+
+    body #section-3 #column-one p {
+        font-size: 45px;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: black;
+    }
+
+    footer p, footer a {
+       font-size: 45px;
+    }
+    
+    footer #footer-wrapper div {
+        border-bottom: 1px solid grey;
+        width: 100%;
+        display: block;
+    }
+}
