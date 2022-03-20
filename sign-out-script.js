@@ -876,3 +876,8 @@ function incrementNotification() {
 el.addEventListener('click', () => {
   document.getElementById("notification-container").classList.toggle("displayed")
 })
+
+
+document.getElementById('dropdown-menu').addEventListener('click', () => {
+  document.getElementById("tabs-menu").classList.toggle("show")
+})
