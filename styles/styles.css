@@ -269,7 +269,7 @@ footer #footer-wrapper div a {
     background-size: cover;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1024px) {
     header {
         height: 250px;
     }
