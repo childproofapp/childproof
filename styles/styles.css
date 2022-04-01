@@ -277,7 +277,7 @@ footer #footer-wrapper div a {
 }
 
 .firefox-button img {
-    border: 2px solid whitesmoke !important;
+    border: 1px solid whitesmoke !important;
 }
 
 @media only screen and (max-width: 1024px) {
