@@ -46,6 +46,14 @@ header nav ul li {
     cursor: pointer;
 }
 
+header nav ul li a {
+    text-decoration: none;
+    color: white;
+    border-radius: 5px;
+    padding: 10px 9px;
+    background: #2471ff;
+}
+
 header nav ul li:hover {
     text-decoration: underline;
 }
