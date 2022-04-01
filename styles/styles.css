@@ -276,6 +276,10 @@ footer #footer-wrapper div a {
     margin-top: 30px;
 }
 
+.firefox-button img {
+    border: 2px solid whitesmoke !important;
+}
+
 @media only screen and (max-width: 1024px) {
     header {
         height: 250px;
