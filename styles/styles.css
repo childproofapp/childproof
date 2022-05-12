@@ -277,6 +277,11 @@ footer #footer-wrapper div a {
     background-size: cover;
 }
 
+.parallax-2 #two-column #column-one {
+    border-radius: 43px;
+    background-color: rgb(141 115 115 / 30%);
+}
+
 #download-separator {
     width: 100%;
     text-align: center;
